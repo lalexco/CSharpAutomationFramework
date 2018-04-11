@@ -61,11 +61,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\GoogleHome.cs" />
+    <Compile Include="Pages\GoogleResults.cs" />
+    <Compile Include="Pages\SeleniumPage.cs" />
     <Compile Include="TestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomationFramework\AutomationFramework.csproj">
+      <Project>{DC5661A8-C0F8-4434-8DDC-4CAFD162088F}</Project>
+      <Name>AutomationFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
